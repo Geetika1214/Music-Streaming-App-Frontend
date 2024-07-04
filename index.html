@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your favourite music is here</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songlist">
+            <h1>Best of NCS - No copyright sounds</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="covers/1.jpg" alt="1">
+                    <span class="songname">Let me Love you</span>
+                    <span class="songlistplay"><span class="timestamp">01:14 <i id="0" class="songitemplay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/2.jpg" alt="1">
+                    <span class="songname">Trap</span>
+                    <span class="songlistplay"><span class="timestamp">01:25 <i id="1" class="songitemplay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/3.jpg" alt="1">
+                    <span class="songname">They mad</span>
+                    <span class="songlistplay"><span class="timestamp">01:13 <i id="2" class="songitemplay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/7.jpg" alt="1">
+                    <span class="songname">Back It up</span>
+                    <span class="songlistplay"><span class="timestamp">02:13 <i id="3" class="songitemplay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/6.jpg" alt="1">
+                    <span class="songname">Safety Dance</span>
+                    <span class="songlistplay"><span class="timestamp">01:15 <i id="4" class="songitemplay fa-regular fa-circle-play"></i></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songbanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="progress-bar" min="0" value="0" max="100">
+        <div class="icons">
+            <i id="backward" class="fa-2x fa-solid fa-backward-step"></i>
+            <i id="masterplay" class="fa-2x fa-regular fa-circle-play"></i>
+            <!-- <i id="pause" class="fa-2x fa-solid fa-pause"></i> -->
+            <i id="forward" class="fa-2x fa-solid fa-forward-step"></i>
+        </div>
+        <div class="songinfo">
+            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="mastersongname">Let me love you - Justin Bieber</span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
